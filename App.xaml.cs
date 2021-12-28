@@ -13,5 +13,6 @@ namespace WForm001
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

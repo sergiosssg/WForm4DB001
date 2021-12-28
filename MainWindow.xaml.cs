@@ -22,6 +22,7 @@ namespace WForm001
     {
         public MainWindow()
         {
+            ;
             InitializeComponent();
         }
     }
