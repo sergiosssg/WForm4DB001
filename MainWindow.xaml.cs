@@ -23,15 +23,37 @@ namespace WForm001
     /// </summary>
     public partial class MainWindow : Window
     {
+        static private string _strConnectionString;
+
+        static private DbAppContext _dbContext;
 
 
+
+        static public DbContext DBContextProperty
+        {
+            get => _dbContext;
+        }
 
         public MainWindow()
         {
-            Console.WriteLine("Привет Мир!");
-            string strConnectionString = makeCoonectionString2SQL();
-            //connToDBEntity(strConnectionString);
+            Console.WriteLine("Инициализирую строку подключения к БД : ");
+            _strConnectionString = makeCoonectionString2SQL();
+
+
+
+            try
+            {
+                _dbContext = new DbAppContext(_strConnectionString);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.Message);
+                Console.Error.WriteLine(ex.StackTrace);
+            }
+
             InitializeComponent();
+
+
         }
 
         private static string makeCoonectionString2SQL()
@@ -106,7 +128,10 @@ namespace WForm001
             return null;
         }
 
-
-
+        private void gridViewOf_VID_CONNECT_Initialized(object sender, EventArgs e)
+        {
+            ;
+            gridViewOf_VID_CONNECT.DataContext = _dbContext.pO_TEL_VID_CONNECTs;
+        }
     }
 }

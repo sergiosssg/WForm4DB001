@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,12 @@ namespace WForm001
         public ToolBoxy()
         {
             InitializeComponent();
+        }
+
+        private void btnConnect_Click(object sender, RoutedEventArgs e)
+        {
+            DbContext dbContext = MainWindow.DBContextProperty;
+
         }
     }
 }

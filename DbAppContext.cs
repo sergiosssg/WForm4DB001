@@ -16,7 +16,7 @@ namespace WForm001
         public DbSet<PO_TEL_OPERATOR> pO_TEL_OPERATORs { get; set; }
 
 
-        public DbAppContext() : base() //base(@"initial catalog=C:\SSG\PROJECTs\TELET\DB4TELEFONE\sampd_cexs.fdb;data source=localhost;user id=sysdba;password=masterkey;pooling=True")
+        public DbAppContext() :base(@"Data Source=localhost;Database=sampd_cexs;Integrated Security=sspi")
         {
 
         }
