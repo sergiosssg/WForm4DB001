@@ -20,11 +20,12 @@
             <RowDefinition Height="670*"/>
             <RowDefinition Height="28*"/>
         </Grid.RowDefinitions>
-        <DataGrid Name="gridViewOf_VID_CONNECT" Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" IsEnabled="False" Grid.ColumnSpan="2">
+        <DataGrid Name="gridViewOf_VID_CONNECT" Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" IsEnabled="False" Grid.ColumnSpan="2" IsSynchronizedWithCurrentItem="False">
             <DataGrid.DataContext>
                 <local:DbAppContext/>
             </DataGrid.DataContext>
         </DataGrid>
         <Label  Name="lbStatusBar" Visibility="Hidden"  Content="Всего записей" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Grid.ColumnSpan="3"/>
+        <local:ToolBoxy x:Name="toolBoxy"  Grid.Column="1" HorizontalAlignment="Stretch" Margin="1,1,1,1" Grid.Row="1" VerticalAlignment="Stretch" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>
