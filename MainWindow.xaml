@@ -8,9 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="500*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="520*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -19,5 +20,10 @@
             <RowDefinition Height="600*"/>
             <RowDefinition Height="12*"/>
         </Grid.RowDefinitions>
+        <DataGrid Name="gridViewOf_VID_CONNECT" Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" IsEnabled="False" Grid.ColumnSpan="2">
+            <DataGrid.DataContext>
+                <local:DbAppContext/>
+            </DataGrid.DataContext>
+        </DataGrid>
     </Grid>
 </Window>

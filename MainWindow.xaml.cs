@@ -23,11 +23,14 @@ namespace WForm001
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
+
         public MainWindow()
         {
             Console.WriteLine("Привет Мир!");
             string strConnectionString = makeCoonectionString2SQL();
-            connToDBEntity(strConnectionString);
+            //connToDBEntity(strConnectionString);
             InitializeComponent();
         }
 
