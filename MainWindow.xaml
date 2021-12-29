@@ -16,14 +16,15 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="60*"/>
-            <RowDefinition Height="600*"/>
-            <RowDefinition Height="12*"/>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="670*"/>
+            <RowDefinition Height="28*"/>
         </Grid.RowDefinitions>
         <DataGrid Name="gridViewOf_VID_CONNECT" Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" IsEnabled="False" Grid.ColumnSpan="2">
             <DataGrid.DataContext>
                 <local:DbAppContext/>
             </DataGrid.DataContext>
         </DataGrid>
+        <Label  Name="lbStatusBar" Visibility="Hidden"  Content="Всего записей" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>
