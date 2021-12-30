@@ -87,7 +87,7 @@ namespace WForm001
             set;
         }
 
-        public PO_TEL_VID_CONNECT pO_TEL_VID_CONNECT { get; set; }
+        public virtual PO_TEL_VID_CONNECT pO_TEL_VID_CONNECT { get; set; }
     }
 
 

@@ -45,7 +45,7 @@ namespace WForm001
             set;
         }
 
-        public ICollection<PO_TEL_OPERATOR> pO_TEL_OPERATORs { get; set; }
+        public virtual ICollection<PO_TEL_OPERATOR> pO_TEL_OPERATORs { get; set; }
     }
 
 
