@@ -128,6 +128,15 @@ namespace WForm001
             return null;
         }
 
+
+
+
+        private static  void makeConfigureForEntityFramework()
+        {
+            //
+        }
+
+
         private void gridViewOf_VID_CONNECT_Initialized(object sender, EventArgs e)
         {
             ;
