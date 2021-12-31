@@ -16,7 +16,7 @@ namespace WForm001
         public DbSet<PO_TEL_OPERATOR> pO_TEL_OPERATORs { get; set; }
 
 
-        public DbAppContext() :base(@"Data Source=localhost;Database=sampd_cexs;Integrated Security=sspi")
+        public DbAppContext()
         {
 
         }
